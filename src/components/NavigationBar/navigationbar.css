@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Eina01-Regular';
+  src: local('Eina01-Regular'), url(../../fonts/Eina01-Regular/Eina01-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: local('Evogria'), url(../../fonts/evogria-cufonfonts/Evogria.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+}
+
+.flexbox-navigationbar-outer-container {
+  border: 2px solid red;
+  background-color: #001F2B;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+}
+
+.flexbox-navigationbar-image-container {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50%;
+  width: 250px;
+}
+
+.flexbox-navigationbar-menu-container {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
+
+.flexbox.navigationbar-menu.container {
+
+}
+
+.flexbox-navigationbar-menu-container button {
+  font-family: "Evogria", "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: white;
+  background-color: #404040;
+  /* border: 1px solid white; */
+}
+
+.flexbox-navigationbar-menu-container button a {
+  background-color: #404040;
+  color: white;
+  text-decoration: none;
+}
+
+.flexbox-navigationbar-menu-container button:hover {
+  background-color: white;
+}
+
+.flexbox-navigationbar-menu-container button:hover a {
+  color: blue;
+  background-color: white;
+}
