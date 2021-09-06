@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Eina01-Regular';
+  src: local('Eina01-Regular'), url(../../fonts/Eina01-Regular/Eina01-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: local('Evogria'), url(../../fonts/evogria-cufonfonts/Evogria.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+}
+
+@font-face {
+  font-family: "Flamante-Round";
+  src: local("Flamante-Round"), url(../../fonts/Flamante\ Round\ -Demo\ FFP-/Flamante-Round-Book-FFP.ttf) format('truetype');
+}
+
+.flexbox-main-outer-container {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding-top: 5%;
+}
+
+.flexbox-main-image-container img {
+  /* border: 2px solid blue; */
+  /* height: 611px; */
+  width: 548px;
+  max-width: 100%;
+  height: auto;
+}
+
+.flexbox-main-text-container {
+  /* border: 2px solid blue; */
+  width: 50%;
+  max-width: 900px;
+  height: 100%;
+  /* padding-left: 5%; */
+}
+
+.flexbox-main-text-heading-container {
+  /* border: 2px solid brown; */
+  width: 90%;
+  min-width: 512px;
+}
+
+.flexbox-main-text-heading-container h1 {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 51px;
+  font-weight: 700;
+  color: black;
+}
+
+.flexbox-main-text-list-container {
+  /* border: 2px solid red; */
+  min-width: 512px;
+}
+
+.flexbox-main-text-list-container ul li {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.flexbox-main-text-list-container ul {
+  padding-inline-start: 25px;
+}
+
+.flexbox-main-paragraph-container {
+  min-width: 512px;
+}
+
+.flexbox-main-paragraph-container p {
+  /* border: 2px solid blue; */
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: black;
+}
+
+.flexbox-main-paragraph-container p span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.flexbox-main-button-container {
+  /* border: 2px solid red; */
+}
+
+.flexbox-main-button-container button {
+  width: 30%;
+  height: 90%;
+  min-width: 200px;
+}
+
+.flexbox-main-button-container button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 50px;
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: black;
+}
+
+.flexbox-main-button-container button:hover {
+  background-color: #1B2954;
+}
+
+.flexbox-main-button-container button:hover a {
+  color: white;
+  background-color: #1B2954;
+}

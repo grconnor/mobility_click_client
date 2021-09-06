@@ -16,7 +16,10 @@ const NavigationBar = () => {
         </div>
         <div className="flexbox-navigationbar-menu-container">
           <button type="button" id="navigationbar-menu-button-home">
-            <a href="/">Home</a>
+            <a href="/">Hem</a>
+          </button>
+          <button type="button" id="navigationbar-menu-button-about-us">
+            <a href="/om-oss">Om Oss</a>
           </button>
           <button type="button" id="navigationbar-menu-button-vardera">
             <a href="/vardera-din-bil">Värdera din bil</a>

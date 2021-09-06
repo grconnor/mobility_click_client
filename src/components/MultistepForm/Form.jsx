@@ -25,7 +25,7 @@ export default class Form extends Component {
   // }
 
   state = {
-    step: 1,
+    step: 2,
     registration: "",
     mileage: "",
     tel: "",
@@ -33,8 +33,35 @@ export default class Form extends Component {
     vinterdack: "-",
     sommardack: "-",
     aretruntdack: "-",
-    status: "Submit"
-    // clicked: false
+    helskinn: "-",
+    halvskinn: "-",
+    dragkrok: "-",
+    carplay: "-",
+    gps: "-",
+    bluetooth: "-",
+    parkeringssensorerbak: "-",
+    parkeringssensorerfram: "-",
+    dieselvarmare: "-",
+    motorvarmare: "-",
+    taklucka: "-",
+    adaptiv: "-",
+    utrustning: "",
+    service: "-",
+    serviehistorik: "-",
+    bilnyckel: "-",
+    vindrutan: "-",
+    sommarslitna: "-",
+    vinterslitna: "-",
+    aretruntslitna: "-",
+    tobak: "-",
+    djurpals: "-",
+    kbrister: "",
+    narsomhelst: "-",
+    onetwoweeks: "-",
+    threefourweeks: "-",
+    hitta: "-",
+    status: "Submit",
+    price: ""
   };
 
   // Proceed to next step
@@ -43,6 +70,7 @@ export default class Form extends Component {
     this.setState({
       step: step + 1,
     });
+    window.scrollTo(0, 0);
   };
 
   // Go back to previous step
@@ -51,39 +79,53 @@ export default class Form extends Component {
     this.setState({
       step: step - 1,
     });
+    window.scrollTo(0, 0);
   };
 
   // Handle field changes
   handleChange = (input) => (e) => {
+    // console.log(e.target.value)
     const name = e.target.name
     this.setState({ [name]: e.target.value });
   };
 
+  // Handle button clicks
   onClick = (e) => {
     // console.log("name:", name);
-    // console.log("target", e.target)
+    console.log("target", e.target)
+    console.log("value", e.target.value)
     const name = e.target.name;
     if (e.target.value === "-") {
       this.setState({ [name]: e.target.name})
       e.target.style.backgroundColor = "green";
+      // e.target.style.color = "white";
     } else {
       this.setState({ [name]: "-"})
-      e.target.style.backgroundColor = "red"
+      e.target.style.backgroundColor = "rgb(160, 33, 33)"
     }
-    // console.log("e.target.value", e.target.value);
-    // console.log("this.state:", this.state);
   }
+
+  // setState = (state) => (e) => {
+  //   console.log(e)
+  //   window.localStorage.setItem("state", JSON.stringify(state));
+  //   super.setState(state)
+  // }
 
   render() {
     const { step } = this.state;
-    const { registration, mileage, tel, email, vinterdack, sommardack, aretruntdack } = this.state;
+    const { registration, mileage, tel, email, vinterdack, sommardack, aretruntdack, helskinn, halvskinn, dragkrok, carplay, gps, bluetooth, parkeringssensorerbak, parkeringssensorerfram, dieselvarmare, motorvarmare, taklucka, adaptiv, utrustning, service, serviehistorik, bilnyckel, vindrutan, sommarslitna, vinterslitna, aretruntslitna, tobak, djurpals, kbrister, narsomhelst, onetwoweeks, threefourweeks, hitta, price } = this.state;
     // console.log("this.state", this.state)
-    const values = { registration, mileage, tel, email, vinterdack, sommardack, aretruntdack };
+    const values = { registration, mileage, tel, email, vinterdack, sommardack, aretruntdack, helskinn, halvskinn, dragkrok, carplay, gps, bluetooth, parkeringssensorerbak, parkeringssensorerfram, dieselvarmare, motorvarmare, taklucka, adaptiv, utrustning, service, serviehistorik, bilnyckel, vindrutan, sommarslitna, vinterslitna, aretruntslitna, tobak, djurpals, kbrister, narsomhelst, onetwoweeks, threefourweeks, hitta, price };
+    console.log("values.registration:", values.registration)
     // eslint-disable-next-line no-unused-vars
     // const [status, setStatus] = useState("Submit");
+    // console.log("registration:", registration)
+    
     const handleSubmit = async (e) => {
       e.preventDefault();
       this.setState({ status: "Sending"});
+      // localStorage.setItem("registration", registration);
+      // localStorage.setItem("email", email);
       // setStatus("Sending...");
 
       let details = {
@@ -93,7 +135,35 @@ export default class Form extends Component {
         email: values.email,
         vinterdack: values.vinterdack,
         sommardack: values.sommardack,
-        aretruntdack: values.aretruntdack
+        aretruntdack: values.aretruntdack,
+        helskinn: values.helskinn,
+        halvskinn: values.halvskinn,
+        dragkrok: values.dragkrok,
+        carplay: values.carplay,
+        gps: values.gps,
+        bluetooth: values.bluetooth,
+        parkeringssensorerbak: values.parkeringssensorerbak,
+        parkeringssensorerfram: values.parkeringssensorerfram,
+        dieselvarmare: values.dieselvarmare,
+        motorvarmare: values.motorvarmare,
+        taklucka: values.taklucka,
+        adaptiv: values.adaptiv,
+        utrustning: values.utrustning,
+        service: values.service,
+        serviehistorik: values.serviehistorik,
+        bilnyckel: values.bilnyckel,
+        vindrutan: values.vindrutan,
+        sommarslitna: values.sommarslitna,
+        vinterslitna: values.vinterslitna,
+        aretruntslitna: values.aretruntslitna,
+        tobak: values.tobak,
+        djurpals: values.djurpals,
+        kbrister: values.kbrister,
+        narsomhelst: values.narsomhelst,
+        onetwoweeks: values.onetwoweeks,
+        threefourweeks: values.threefourweeks,
+        hitta: values.hitta,
+        price: values.price
       };
       let response = await fetch("http://localhost:5000/vardera-din-bil", {
         method: "POST",
@@ -106,7 +176,7 @@ export default class Form extends Component {
       this.setState({status: "Submit"});
       let result = await response.json();
       alert(result.status);
-      console.log(result.status)
+      console.log("result.status:", result.status)
     };
 
     switch (step) {
@@ -114,10 +184,10 @@ export default class Form extends Component {
         return (
           <PersonalInformation
             nextStep={this.nextStep}
-            handleChange={this.handleChange}
             values={values}
-            // onSubmit={handleSubmit}
+            handleChange={this.handleChange}
             handleSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
             // onClick={this.handleButton}
           />
         );
@@ -126,10 +196,11 @@ export default class Form extends Component {
           <CarInformation
             nextStep={this.nextStep}
             prevStep={this.prevStep}
-            onClick={this.onClick}
             values={values}
-            // onSubmit={handleSubmit}
             handleSubmit={handleSubmit}
+            handleChange={this.handleChange}
+            onClick={this.onClick}
+            // onSubmit={handleSubmit}
             // onClick={this.handleButtonChange}
           />
         );

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Eina01-Regular';
+  src: local('Eina01-Regular'), url(../../fonts/Eina01-Regular/Eina01-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: local('Evogria'), url(../../fonts/evogria-cufonfonts/Evogria.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+}
+
+@font-face {
+  font-family: "Flamante-Round";
+  src: local("Flamante-Round"), url(../../fonts/Flamante\ Round\ -Demo\ FFP-/Flamante-Round-Book-FFP.ttf) format('truetype');
+}
+
+.flexbox-badges-outer-container {
+  border: 2px solid red;
+  width: 100vw;
+}
+
+.flexbox-badges-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-badges-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-badges-item img {
+  height: 122px;
+  width: 100px;
+}
+
+.flexbox-badges-item p {
+  border: 2px solid red;
+  width: 500px;
+}
+
+.flexbox-badges-item p span {
+
+}

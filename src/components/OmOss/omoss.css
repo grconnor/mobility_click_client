@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Eina01-Regular';
+  src: local('Eina01-Regular'), url(../../fonts/Eina01-Regular/Eina01-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: local('Evogria'), url(../../fonts/evogria-cufonfonts/Evogria.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+}
+
+@font-face {
+  font-family: "Flamante-Round";
+  src: local("Flamante-Round"), url(../../fonts/Flamante\ Round\ -Demo\ FFP-/Flamante-Round-Book-FFP.ttf) format('truetype');
+}
+
+.flexbox-omoss-outer-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(27,41,84);
+  background: linear-gradient(90deg, rgba(27,41,84,1) 0%, rgba(33,77,135,1) 25%, rgba(33,77,135,1) 75%, rgba(27,41,84,1) 100%);
+  height: 100%;
+  width: 100vw;
+  padding-top: 3%;
+}
+
+.flexbox-omoss-outer-text-container {
+  border: 2px solid blue;
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 8%;
+}
+
+.flexbox-omoss-heading-container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  height: 25%;
+  width: 100%;
+}
+
+.flexbox-omoss-heading-header-container {
+  border: 2px solid blue;
+  text-align: center;
+  height: 25%;
+  width: 100%;
+}
+
+.flexbox-omoss-heading-header-container h2 {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.hr-line {
+  width: 20%;
+  height: 1px;
+  background-color: black;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.flexbox-omoss-heading-paragraph-container {
+  border: 2px solid greenyellow;
+  margin-top: 3%;
+  text-align: center;
+  width: 65%;
+  height: 60%;
+  margin-bottom: 3%;
+}
+
+.flexbox-omoss-heading-paragraph-container p {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: black;
+}
+
+.flexbox-omoss-vemarvi-paragraph-container {
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.flexbox-omoss-vemarvi-paragraph-wrapper {
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flexbox-omoss-vemarvi-paragraph-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.flexbox-omoss-vemarvi-paragraph-heading-container h2 {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #595959;
+}
+
+.flexbox-omoss-vemarvi-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding: 2% 0 2% 0;
+  height: 100%;
+  width: 100%;
+}
+
+.flexbox-omoss-vemarvi-paragraph p {
+  width: 80%;
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: black;
+}

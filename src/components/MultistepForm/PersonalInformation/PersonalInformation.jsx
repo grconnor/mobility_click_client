@@ -1,4 +1,11 @@
-import React, { Component } from 'react'
+// Library Imports:
+import "./personalinformation.css";
+import React, { Component } from "react";
+
+// Component Imports:
+
+// Image Imports:
+
 
 export class PersonalInformation extends Component {
   continue = e => {
@@ -22,8 +29,10 @@ export class PersonalInformation extends Component {
           </div>
           <form onSubmit={handleSubmit} id="multistepform" name="multistepform">
             <div className="flexbox-personalinformation-form-label-input-container">
-              <label htmlFor="registration">
-                Registreringsnummer
+              <div className="flexbox-personalinformation-form-label-input-wrapper">
+                <label htmlFor="registration">
+                  Registreringsnummer
+                </label>
                 <input
                   id="registration"
                   name="registration"
@@ -32,20 +41,24 @@ export class PersonalInformation extends Component {
                   value={values.registration}
                   onChange={handleChange("registration")}
                 />
-              </label>
-              <label htmlFor="mileage">
-                Miltal
+              </div>
+              <div className="flexbox-personalinformation-form-label-input-wrapper">
+                <label htmlFor="mileage">
+                  Miltal
+                </label>
                 <input
                   id="mileage"
-                  name="mielage"
+                  name="mileage"
                   type="number"
                   placeholder="10 000"
                   value={values.mileage}
                   onChange={handleChange("mileage")}
                 />
-              </label>
-              <label htmlFor="tel">
-                Telefon
+              </div>
+              <div className="flexbox-personalinformation-form-label-input-wrapper">
+                <label htmlFor="tel">
+                  Telefon
+                </label>
                 <input
                   id="tel"
                   name="tel"
@@ -54,9 +67,11 @@ export class PersonalInformation extends Component {
                   value={values.tel}
                   onChange={handleChange("tel")}
                 />
-              </label>
-              <label htmlFor="email">
-                Email
+              </div>
+              <div className="flexbox-personalinformation-form-label-input-wrapper">
+                <label htmlFor="email">
+                  Email
+                </label>
                 <input
                   id="email"
                   name="email"
@@ -65,20 +80,18 @@ export class PersonalInformation extends Component {
                   value={values.email}
                   onChange={handleChange("email")}
                 />
-              </label>
+              </div>
             </div>
             <div className="flexbox-personalinformation-bottom-container">
-              <button type="submit" id="form-submit-button">
-                Ge mig högst bud!
-              </button>
+              <button type="button" onClick={this.continue}>Nästa steg</button>
               <p id="contact-us-paragraph">
                 Om du har några frågor är du alltid välkommen att kontakt oss på 000
                 000 000
               </p>
             </div>
-            <div className="flexbox-personalinformation-continue-button">
+            {/* <div className="flexbox-personalinformation-continue-button">
               <button type="button" onClick={this.continue}>Continue</button>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
