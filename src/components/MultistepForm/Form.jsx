@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 
 // Component Imports:
-import CarInformation from "./CarInfomation/CarInformation";
+import Success from "./Success/Success";
 import PersonalInformation from "./PersonalInformation/PersonalInformation";
 
 // Image Imports:
@@ -25,41 +25,41 @@ export default class Form extends Component {
   // }
 
   state = {
-    step: 2,
+    step: 1,
     registration: "",
     mileage: "",
     tel: "",
     email: "",
-    vinterdack: "-",
-    sommardack: "-",
-    aretruntdack: "-",
-    helskinn: "-",
-    halvskinn: "-",
-    dragkrok: "-",
-    carplay: "-",
-    gps: "-",
-    bluetooth: "-",
-    parkeringssensorerbak: "-",
-    parkeringssensorerfram: "-",
-    dieselvarmare: "-",
-    motorvarmare: "-",
-    taklucka: "-",
-    adaptiv: "-",
-    utrustning: "",
-    service: "-",
-    serviehistorik: "-",
-    bilnyckel: "-",
-    vindrutan: "-",
-    sommarslitna: "-",
-    vinterslitna: "-",
-    aretruntslitna: "-",
-    tobak: "-",
-    djurpals: "-",
-    kbrister: "",
+    // vinterdack: "-",
+    // sommardack: "-",
+    // aretruntdack: "-",
+    // helskinn: "-",
+    // halvskinn: "-",
+    // dragkrok: "-",
+    // carplay: "-",
+    // gps: "-",
+    // bluetooth: "-",
+    // parkeringssensorerbak: "-",
+    // parkeringssensorerfram: "-",
+    // dieselvarmare: "-",
+    // motorvarmare: "-",
+    // taklucka: "-",
+    // adaptiv: "-",
+    // utrustning: "",
+    // service: "-",
+    // serviehistorik: "-",
+    // bilnyckel: "-",
+    // vindrutan: "-",
+    // sommarslitna: "-",
+    // vinterslitna: "-",
+    // aretruntslitna: "-",
+    // tobak: "-",
+    // djurpals: "-",
+    // kbrister: "",
+    // hitta: "-",
     narsomhelst: "-",
     onetwoweeks: "-",
     threefourweeks: "-",
-    hitta: "-",
     status: "Submit",
     price: ""
   };
@@ -84,14 +84,12 @@ export default class Form extends Component {
 
   // Handle field changes
   handleChange = (input) => (e) => {
-    // console.log(e.target.value)
     const name = e.target.name
     this.setState({ [name]: e.target.value });
   };
 
   // Handle button clicks
   onClick = (e) => {
-    // console.log("name:", name);
     console.log("target", e.target)
     console.log("value", e.target.value)
     const name = e.target.name;
@@ -105,21 +103,12 @@ export default class Form extends Component {
     }
   }
 
-  // setState = (state) => (e) => {
-  //   console.log(e)
-  //   window.localStorage.setItem("state", JSON.stringify(state));
-  //   super.setState(state)
-  // }
-
   render() {
     const { step } = this.state;
-    const { registration, mileage, tel, email, vinterdack, sommardack, aretruntdack, helskinn, halvskinn, dragkrok, carplay, gps, bluetooth, parkeringssensorerbak, parkeringssensorerfram, dieselvarmare, motorvarmare, taklucka, adaptiv, utrustning, service, serviehistorik, bilnyckel, vindrutan, sommarslitna, vinterslitna, aretruntslitna, tobak, djurpals, kbrister, narsomhelst, onetwoweeks, threefourweeks, hitta, price } = this.state;
-    // console.log("this.state", this.state)
-    const values = { registration, mileage, tel, email, vinterdack, sommardack, aretruntdack, helskinn, halvskinn, dragkrok, carplay, gps, bluetooth, parkeringssensorerbak, parkeringssensorerfram, dieselvarmare, motorvarmare, taklucka, adaptiv, utrustning, service, serviehistorik, bilnyckel, vindrutan, sommarslitna, vinterslitna, aretruntslitna, tobak, djurpals, kbrister, narsomhelst, onetwoweeks, threefourweeks, hitta, price };
+    const { registration, mileage, tel, email, narsomhelst, onetwoweeks, threefourweeks, price } = this.state;
+    const values = { registration, mileage, tel, email, narsomhelst,onetwoweeks, threefourweeks, price };
     console.log("values.registration:", values.registration)
-    // eslint-disable-next-line no-unused-vars
     // const [status, setStatus] = useState("Submit");
-    // console.log("registration:", registration)
     
     const handleSubmit = async (e) => {
       e.preventDefault();
@@ -133,36 +122,36 @@ export default class Form extends Component {
         mileage: values.mileage,
         tel: values.tel,
         email: values.email,
-        vinterdack: values.vinterdack,
-        sommardack: values.sommardack,
-        aretruntdack: values.aretruntdack,
-        helskinn: values.helskinn,
-        halvskinn: values.halvskinn,
-        dragkrok: values.dragkrok,
-        carplay: values.carplay,
-        gps: values.gps,
-        bluetooth: values.bluetooth,
-        parkeringssensorerbak: values.parkeringssensorerbak,
-        parkeringssensorerfram: values.parkeringssensorerfram,
-        dieselvarmare: values.dieselvarmare,
-        motorvarmare: values.motorvarmare,
-        taklucka: values.taklucka,
-        adaptiv: values.adaptiv,
-        utrustning: values.utrustning,
-        service: values.service,
-        serviehistorik: values.serviehistorik,
-        bilnyckel: values.bilnyckel,
-        vindrutan: values.vindrutan,
-        sommarslitna: values.sommarslitna,
-        vinterslitna: values.vinterslitna,
-        aretruntslitna: values.aretruntslitna,
-        tobak: values.tobak,
-        djurpals: values.djurpals,
-        kbrister: values.kbrister,
+        // vinterdack: values.vinterdack,
+        // sommardack: values.sommardack,
+        // aretruntdack: values.aretruntdack,
+        // helskinn: values.helskinn,
+        // halvskinn: values.halvskinn,
+        // dragkrok: values.dragkrok,
+        // carplay: values.carplay,
+        // gps: values.gps,
+        // bluetooth: values.bluetooth,
+        // parkeringssensorerbak: values.parkeringssensorerbak,
+        // parkeringssensorerfram: values.parkeringssensorerfram,
+        // dieselvarmare: values.dieselvarmare,
+        // motorvarmare: values.motorvarmare,
+        // taklucka: values.taklucka,
+        // adaptiv: values.adaptiv,
+        // utrustning: values.utrustning,
+        // service: values.service,
+        // serviehistorik: values.serviehistorik,
+        // bilnyckel: values.bilnyckel,
+        // vindrutan: values.vindrutan,
+        // sommarslitna: values.sommarslitna,
+        // vinterslitna: values.vinterslitna,
+        // aretruntslitna: values.aretruntslitna,
+        // tobak: values.tobak,
+        // djurpals: values.djurpals,
+        // kbrister: values.kbrister,
         narsomhelst: values.narsomhelst,
         onetwoweeks: values.onetwoweeks,
         threefourweeks: values.threefourweeks,
-        hitta: values.hitta,
+        // hitta: values.hitta,
         price: values.price
       };
       let response = await fetch("http://localhost:5000/vardera-din-bil", {
@@ -193,26 +182,11 @@ export default class Form extends Component {
         );
       case 2:
         return (
-          <CarInformation
-            nextStep={this.nextStep}
-            prevStep={this.prevStep}
-            values={values}
-            handleSubmit={handleSubmit}
-            handleChange={this.handleChange}
-            onClick={this.onClick}
-            // onSubmit={handleSubmit}
-            // onClick={this.handleButtonChange}
-          />
+          <Success />
         );
       default:
       // Do nothing
       console.log("MultiStep form built with React.")
     }
-
-    // return (
-    //   <div>
-    //     <h1>MultiStep Form</h1>
-    //   </div>
-    // );
   }
 }

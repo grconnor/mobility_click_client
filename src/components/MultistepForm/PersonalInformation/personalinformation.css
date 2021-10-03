@@ -38,11 +38,15 @@
 }
 
 .flexbox-personalinformation-form-container {
-  /* border: 2px solid greenyellow; */
+  color: white;
+  justify-content: center;
+  border: 2px solid red;
   background-color: #1B2954;
   box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.4);
-  width: 55%;
+  width: 650px;
   height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .flexbox-personalinformation-form-heading-container {
@@ -123,7 +127,7 @@
   height: 50px;
   width: 18%;
   min-width: 120px;
-  border-radius: 10px;
+  border-radius: 15px;
   font-family: "Flamante-Round", "Roboto-Condensed", sans-serif;
   font-style: normal;
   font-size: 18px;

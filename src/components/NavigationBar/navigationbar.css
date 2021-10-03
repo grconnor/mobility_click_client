@@ -37,8 +37,9 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 50%;
-  width: 250px;
+  height: 40%;
+  width: 200px;
+  margin-left: 1%;
 }
 
 .flexbox-navigationbar-menu-container {
@@ -89,4 +90,45 @@
 .flexbox-navigationbar-menu-container button:hover a {
   color: white;
   background-color: #404040;
+}
+
+
+/* Bottom */
+
+.flexbox-bottom-slogan-outer-container {
+  /* border: 2px solid red; */
+  width: 100vw;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-bottom-slogan-outer-container:hover {
+  /* background-color: black; */
+  /* cursor: pointer; */
+}
+
+.flexbox-bottom-slogan-inner-container {
+  /* border: 2px solid blue; */
+  /* background-color: rgb(59, 123, 208); */
+  background-color: #c31531;
+  height: 100%;
+  width: 700px;
+  text-align: center;
+  min-width: 850px;
+}
+
+.flexbox-bottom-slogan-inner-container:hover {
+  cursor: pointer;
+}
+
+/* Bottom Text */
+
+.flexbox-bottom-slogan-outer-container div {
+  font-family: "Evogria", sans-serif;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 300;
 }

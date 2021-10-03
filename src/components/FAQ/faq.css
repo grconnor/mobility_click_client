@@ -1,8 +1,10 @@
 .faqs {
+  border: 2px solid red;
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 .faqs .faq {
@@ -15,7 +17,7 @@
 }
 
 .faqs .faq .faq-question {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: relative;
   font-size: 20px;
   padding-right: 80px;
@@ -24,7 +26,7 @@
 }
 
 .faqs .faq .faq-question::after {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   content: "";
   position: absolute;
   top: 50%;
@@ -53,6 +55,7 @@
   margin-bottom: 15px;
   color: white;
   background-color: #404040;
+  opacity: 0.3;
 }
 
 .faqs .faq.open .faq-question::after {

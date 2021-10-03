@@ -26,6 +26,11 @@ const NavigationBar = () => {
           </button>
         </div>
       </div>
+      {/* <div className="flexbox-bottom-slogan-outer-container">
+        <div onClick="location.href='/'" className="flexbox-bottom-slogan-inner-container">
+          BudPåDinBil.se
+        </div>
+      </div> */}
     </>
   );
 };

@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="flexbox-footer-outer-container">
         <div className="flexbox-footer-text-container">
           <p id="footer-paragraph">
-            org.nr: 555555-5555 - Tel: 000-0000000 - info@mobilityclick.se
+            <span>org.nr: 555555-5555</span> - <span>Tel: 000-0000000</span> - <span>info@mobilityclick.se</span>
           </p>
         </div>
       </div>

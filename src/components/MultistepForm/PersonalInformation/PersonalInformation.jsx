@@ -17,11 +17,11 @@ export class PersonalInformation extends Component {
     const { values, handleChange, handleSubmit } = this.props;
 
     return (
-      <div className="flexbox-personalinformation-outer-container">
+      // <div className="flexbox-personalinformation-outer-container">
         <div className="flexbox-personalinformation-form-container">
           <div className="flexbox-personalinformation-form-heading-container">
             <h2 id="personalinformation-heading">
-              Fyll i uppgifterna för att få högst budet
+              Fyll i uppgifterna för att få högsta bud
             </h2>
             <p id="personalinformation-paragraph">
               Helt kostnadsfritt och ej bindande!
@@ -31,7 +31,7 @@ export class PersonalInformation extends Component {
             <div className="flexbox-personalinformation-form-label-input-container">
               <div className="flexbox-personalinformation-form-label-input-wrapper">
                 <label htmlFor="registration">
-                  Registreringsnummer
+                  Ditt registreringsnummer
                 </label>
                 <input
                   id="registration"
@@ -50,14 +50,14 @@ export class PersonalInformation extends Component {
                   id="mileage"
                   name="mileage"
                   type="number"
-                  placeholder="10 000"
+                  placeholder="10 000 ( max 18 000 mil )"
                   value={values.mileage}
                   onChange={handleChange("mileage")}
                 />
               </div>
               <div className="flexbox-personalinformation-form-label-input-wrapper">
                 <label htmlFor="tel">
-                  Telefon
+                  Ditt telefonnummer
                 </label>
                 <input
                   id="tel"
@@ -68,7 +68,7 @@ export class PersonalInformation extends Component {
                   onChange={handleChange("tel")}
                 />
               </div>
-              <div className="flexbox-personalinformation-form-label-input-wrapper">
+              {/* <div className="flexbox-personalinformation-form-label-input-wrapper">
                 <label htmlFor="email">
                   Email
                 </label>
@@ -80,13 +80,12 @@ export class PersonalInformation extends Component {
                   value={values.email}
                   onChange={handleChange("email")}
                 />
-              </div>
+              </div> */}
             </div>
             <div className="flexbox-personalinformation-bottom-container">
-              <button type="button" onClick={this.continue}>Nästa steg</button>
+              <button type="button" onClick={this.continue}>Sicka</button>
               <p id="contact-us-paragraph">
-                Om du har några frågor är du alltid välkommen att kontakt oss på 000
-                000 000
+                Om du har några frågor är du alltid välkommen att kontakt oss på 08-643 00 00
               </p>
             </div>
             {/* <div className="flexbox-personalinformation-continue-button">
@@ -94,7 +93,7 @@ export class PersonalInformation extends Component {
             </div> */}
           </form>
         </div>
-      </div>
+      // </div>
     );
   }
 }
