@@ -23,15 +23,23 @@
 }
 
 .flexbox-success-outer-container {
-  padding: 3%;
+  /* padding: 3%; */
   /* border: 2px solid red; */
-  background-color: #1B2853;
-  background-color: #1B2954;
-  box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.4);
+  /* background-color: #1B2853; */
+  /* background-color: #1B2954; */
+  /* box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.4); */
   /* margin-top: 4%; */
-  width: 601px;
-  height: 538px;
+  width: 1040px;
+  height: 500px;
+  min-height: 500px;
   color: white;
+  /* padding:  71px 0px 5px 3.5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px; */
+  padding: 20px 0px 5px 3.5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .flexbox-success-inner-container {
@@ -63,6 +71,9 @@
 .flexbox-success-whathappens-heading-container {
   /* border: 2px solid red; */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexbox-success-whathappens-list-container ul li {
@@ -70,6 +81,8 @@
 }
 
 .flexbox-success-whathappens-heading-container h2 {
+  width: 35%;
+  border: 2px solid red;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -77,12 +90,19 @@
   line-height: 35px;
   font-weight: 5700;
   /* color: #c31531; */
-  color: #00b3ff;
+  /* color: #00b3ff; */
+  /* color: rgb(76, 102, 153); */
+  background-color: #404040;
   /* color: red; */
 }
 
 .flexbox-success-whathappens-list-container {
-
+  border: 2px solid blue;
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .flexbox-success-heading-container {
@@ -116,9 +136,11 @@
 
 .flexbox-success-button button {
   width: 30%;
-  height: 90%;
+  height: 50px;
   min-width: 200px;
-  background-color: rgb(59, 123, 208);
+  /* background-color: rgb(59, 123, 208); */
+  background-color: rgb(76, 102, 153);
+  ;
   border-radius: 25px;
   border: none;
 }
@@ -141,12 +163,13 @@
 
 .flexbox-success-button button:hover {
   /* background-color: #1b2954; */
-  background-color: #c31531;
-  color: #006C9A;
+  background-color: rgb(105, 120, 125);
+  /* color: #006C9A; */
+  color: #404040;
 }
 
 .flexbox-success-button button:hover a {
   color: black;
   /* background-color: #1b2954; */
-  background-color: #c31531;
+  background-color: rgb(105, 120, 125);
 }

@@ -28,18 +28,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 100px;
-}
-
-.flexbox-navigationbar-image-container {
-  /* border: 2px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  height: 40%;
-  width: 200px;
-  margin-left: 1%;
+  height: 80px;
+  z-index: -1;
 }
 
 .flexbox-navigationbar-menu-container {
@@ -48,12 +38,7 @@
   flex-direction: row;
   height: 100%;
   align-items: center;
-}
-
-.flexbox-navigationbar-menu-container {
-  /* border: 2px solid red; */
-  margin-right: 10px;
-  /* border: 2px solid black;  */
+  margin-right: 40px;
 }
 
 .flexbox-navigationbar-menu-container #navigationbar-menu-button-empty {
@@ -65,7 +50,7 @@
   min-width: 65px;
   height: 40px;
   /* background-color: #404040; */
-  background-color: white;
+  background-color: black;
   border: none;
   /* border: 1px solid white; */
 }
@@ -78,52 +63,22 @@
   font-weight: 400;
   width: 100%;
   /* background-color: #404040; */
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-decoration: none;
 }
 
 .flexbox-navigationbar-menu-container button:hover {
   background-color: #404040;
+  /* opacity: 0.75; */
+  cursor: pointer;
 }
 
 .flexbox-navigationbar-menu-container button:hover a {
   color: white;
+  /* color: black; */
   background-color: #404040;
 }
-
-
-/* Bottom */
-
-.flexbox-bottom-slogan-outer-container {
-  /* border: 2px solid red; */
-  width: 100vw;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flexbox-bottom-slogan-outer-container:hover {
-  /* background-color: black; */
-  /* cursor: pointer; */
-}
-
-.flexbox-bottom-slogan-inner-container {
-  /* border: 2px solid blue; */
-  /* background-color: rgb(59, 123, 208); */
-  background-color: #c31531;
-  height: 100%;
-  width: 700px;
-  text-align: center;
-  min-width: 850px;
-}
-
-.flexbox-bottom-slogan-inner-container:hover {
-  cursor: pointer;
-}
-
-/* Bottom Text */
 
 .flexbox-bottom-slogan-outer-container div {
   font-family: "Evogria", sans-serif;
@@ -131,4 +86,34 @@
   font-size: 45px;
   line-height: 55px;
   font-weight: 300;
+}
+
+/* Logo */
+
+.flexbox-navigationbar-logo-container {
+  /* border: 2px solid red; */
+  height: 80px;
+  width: 500px;
+}
+
+.flexbox-navigationbar-logo {
+  /* border: 2px solid yellowgreen; */
+  /* background-color: white; */
+  height: 100%;
+  width: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-navigationbar-logo img {
+  /* border: 2px solid blue; */
+  height: 50px;
+  width: 150px;
+  /* object-fit: cover; */
+}
+
+.flexbox-navigationbar-logo:hover {
+  cursor: pointer;
+  background-color: darkgray;
 }

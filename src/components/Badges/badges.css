@@ -26,7 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgray;
+  /* background-color: darkgray; */
+  background-color: black;
 }
 
 .flexbox-badges-inner-container {
@@ -41,6 +42,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-color: black;
 }
 
 .flexbox-badges-item {
@@ -50,9 +52,12 @@
   align-items: center;
   border-radius: 25px;
   /* background-color: lightcyan; */
-  background-color: #C31531;
+  /* background-color: #C31531; */
   opacity: 0.9;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 12px;
+  /* background-color: black; */
+  background-color: rgb(114, 127, 146);
+  box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.4);
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 12px; */
   width: 25%;
   height: 235px;
   /* height: 100%; */

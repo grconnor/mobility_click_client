@@ -32,7 +32,7 @@ const Success = () => {
                   Vi återkommer till dig med bästa möjliga bud.
                 </li>
                 <li>
-                  Efter accepterat bud, ordnar vi med betalning och upphämtning.
+                  Efter accepterat bud, ordnar vi med kontroll av bil, betalning till ditt konto, och upphämtning.
                 </li>
               </ul>
             </div>

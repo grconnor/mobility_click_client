@@ -21,7 +21,7 @@ export class PersonalInformation extends Component {
         <div className="flexbox-personalinformation-form-container">
           <div className="flexbox-personalinformation-form-heading-container">
             <h2 id="personalinformation-heading">
-              Fyll i uppgifterna för att få högsta bud
+              Fyll i uppgifterna för högsta bud
             </h2>
             <p id="personalinformation-paragraph">
               Helt kostnadsfritt och ej bindande!
@@ -31,7 +31,7 @@ export class PersonalInformation extends Component {
             <div className="flexbox-personalinformation-form-label-input-container">
               <div className="flexbox-personalinformation-form-label-input-wrapper">
                 <label htmlFor="registration">
-                  Ditt registreringsnummer
+                  Ditt registreringsnummer:
                 </label>
                 <input
                   id="registration"
@@ -44,7 +44,7 @@ export class PersonalInformation extends Component {
               </div>
               <div className="flexbox-personalinformation-form-label-input-wrapper">
                 <label htmlFor="mileage">
-                  Miltal
+                  Miltal:
                 </label>
                 <input
                   id="mileage"
@@ -57,13 +57,13 @@ export class PersonalInformation extends Component {
               </div>
               <div className="flexbox-personalinformation-form-label-input-wrapper">
                 <label htmlFor="tel">
-                  Ditt telefonnummer
+                  Ditt telefonnummer:
                 </label>
                 <input
                   id="tel"
                   name="tel"
                   type="number"
-                  placeholder="0771 88 88 88"
+                  placeholder="071 888 8888"
                   value={values.tel}
                   onChange={handleChange("tel")}
                 />
@@ -83,7 +83,7 @@ export class PersonalInformation extends Component {
               </div> */}
             </div>
             <div className="flexbox-personalinformation-bottom-container">
-              <button type="button" onClick={this.continue}>Sicka</button>
+              <button type="button" onClick={this.continue}>Skicka</button>
               <p id="contact-us-paragraph">
                 Om du har några frågor är du alltid välkommen att kontakt oss på 08-643 00 00
               </p>

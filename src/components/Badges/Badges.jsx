@@ -16,7 +16,7 @@ const Badges = () => {
             <div className="flexbox-badges-item">
               <img src={Badge} alt="badge" />
               <p id="badge-paragraph">
-                Få en kostnadsfri onlinevärdering. Sälj endast om du vill - <span>Ej bindande</span> och <span>helt kostnadsfritt</span>.
+                Kostnadsfri onlinevärdering. Sälj endast om du vill - <span>Ej bindande</span> och <span>helt kostnadsfritt</span>.
               </p>
             </div>
             <div className="flexbox-badges-item">

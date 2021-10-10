@@ -25,11 +25,11 @@ const HIW = () => {
               <div className="flexbox-hiw-item-text-container">
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">
-                    1. Ange biluppgifterna
+                    1. Ange dina uppgifter
                   </h2>
                 </div>
                 <p id="hiw-item-paragraph">
-                  Därefter tillämpar vi en massa information om din bil.
+                  Fyll i bilens registreringsnummer och nuvarande mätarställning samt ditt telefonnummer. I dagsläget hanterar vi inte bilar som används i kommersiellt syfte som exempelvis taxi. vi hanterar inte heller privatimporterade fordon.
                 </p>
               </div>
             </div>
@@ -38,14 +38,11 @@ const HIW = () => {
               <div className="flexbox-hiw-item-text-container">
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">
-                    2. Få ett prisförslag
+                    2. Få ditt erbjudande
                   </h2>
                 </div>
                 <p id="hiw-item-paragraph">
-                  Några utvalda köpare tar emot din annons.
-                </p>
-                <p id="hiw-item-paragraph">
-                  De kollar igenom informationen och tar kontakt med dig med ett bud. Budet är inte bindande så om du inte är nöjd kan du tacka nej.
+                  Eftersom varje begagnad-bil är unik, kontaktar vi dig för en kortare intervju. Därefter utför vi en dagsaktuell analys av marknaden och presenterar ett erbjudande till dig. Erbjudandet är kostnadsfritt.
                 </p>
               </div>
             </div>
@@ -54,12 +51,12 @@ const HIW = () => {
               <div className="flexbox-hiw-item-text-container">
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">
-                    3. Ni kommer överens och bilaffären är klar
+                    3. När vi är överens
                   </h2>
                 </div>
                 {/* <div className="flexbox-hiw-item-line" /> */}
                 <p id="hiw-item-paragraph">
-                  Handlaren hjälper dig med allt pappersarbete och är du intresserad av att köpa ny bil kan de även hjälpa dig hitta en ny pärla.
+                  Vi testar och hämtar bilen när det passar dig. En av våra fordonstestare kontrollerar bilens skick.Efter det görs en banköverföring till ditt konto.(Vid lån på bilen betalar vi direkt till din långivare).
                 </p>
               </div>
             </div>

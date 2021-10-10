@@ -9,6 +9,7 @@ import FAQ from './components/FAQ/FAQMain';
 import OmOss from "./components/OmOss/OmOss";
 import Footer from "./components/Footer/Footer";
 import MultiStepForm from "./components/MultistepForm/Form";
+import HoverableDiv from "./components/HoverableDiv/HoverableDiv";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 
 
@@ -20,12 +21,15 @@ const App = () => {
         <BrowserRouter>
         <NavigationBar />
           <Switch>
-            <div className="flexbox-content-wrapper">
-              <Route exact path="/" component={Main} />
-              <Route exact path="/om-oss" component={OmOss} />
-              <Route exact path="/vardera-din-bil" component={MultiStepForm} />
-              <Route exact path="/faq" component={FAQ} />
-              <Route exact path="/hur-fungera-det" component={HIW} />
+            <div className="flexbox-content-wrapper-bypass">
+              <div className="flexbox-content-wrapper">
+                <Route exact path="/" component={Main} />
+                <Route exact path="/om-oss" component={OmOss} />
+                <Route exact path="/vardera-din-bil" component={MultiStepForm} />
+                <Route exact path="/faq" component={FAQ} />
+                <Route exact path="/hur-fungera-det" component={HIW} />
+                {/* <Route exact path="/hoverable-div" component={HoverableDiv} /> */}
+              </div>
             </div>
           </Switch>
         <Footer />

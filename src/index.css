@@ -15,8 +15,15 @@ code {
 
 html {
   height: 100%;
+  width: 100vw;
 }
 
 .flexbox-content-wrapper {
   min-height: calc(100vh - 100px);
+  z-index: 2;
+}
+
+.flexbox-content-wrapper-bypass {
+  display: flex;
+  flex-direction: column;
 }

@@ -24,7 +24,7 @@
 
 .flexbox-hiw-outer-container {
   margin-top: 3%;
-  margin-bottom: 7%;
+  margin-bottom: 6%;
   height: 100%;
   width: 100vw;
   display: flex;
@@ -45,6 +45,7 @@
   /* border: 2px solid blue; */
   width: 100%;
   text-align: center;
+  background-color: ;
 }
 
 .flexbox-hiw-heading-container h1 {
@@ -69,9 +70,13 @@
   /* border: 2px solid blue; */
   width: 415px;
   height: 100%;
-  padding: 12px;
-  background-color: #1A2954;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 12px;
+  padding: 20px;
+  /* background-color: #1A2954; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 12px; */
+  /* background-color: black;
+  box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.4); */
+  /* background-color: rgb(114, 127, 146); */
+  /* box-shadow: 0 5px 10px 8px rgba(0, 0, 0, 0.4); */
   border-radius: 15px;
 }
 
@@ -91,10 +96,10 @@
 
 .flexbox-hiw-item-text-container {
   /* border: 1px solid red; */
-  background-color: lightgray;
+  /* background-color: lightgray; */
   padding: 10px;
-  /* border-radius: 10px; */
   width: 395px;
+  border-radius: 15px;
 }
 
 .flexbox-hiw-item-text-container p {
@@ -104,12 +109,13 @@
   line-height: 25px;
   font-weight: 400;
   color: black;
-  text-align: left;
+  text-align: center;
 }
 
 .flexbox-hiw-item img {
   height: 277px;
   width: 100%;
+  border-radius: 15px;
 }
 
 .flexbox-hiw-item-text-heading-container {
