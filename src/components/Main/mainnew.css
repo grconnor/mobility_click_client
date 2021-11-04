@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Eina01-Regular";
+  src: local("Eina01-Regular"),
+    url(../../fonts/Eina01-Regular/Eina01-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Evogria";
+  src: local("Evogria"),
+    url(../../fonts/evogria-cufonfonts/Evogria.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+}
+
+@font-face {
+  font-family: "Flamante-Round";
+  src: local("Flamante-Round"),
+    url(../../fonts/Flamante\ Round\ -Demo\ FFP-/Flamante-Round-Book-FFP.ttf)
+      format("truetype");
+}
+
+@media only screen and (max-width: 765px) {
+  
+  body .flexbox-main-salja-text-heading-container h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500px;
+  }
+  
+  body .flexbox-main-salja-text-heading-paragraph-container p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+.flexbox-main-outer-container {
+  /* border: 2px solid red; */
+  width: 100vw;
+  height: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox-main-salja-outer-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  min-height: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3)
+  ), url("../../images/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: grey;
+}
+
+.flexbox-main-salja-inner-container {
+  /* border: 2px solid blue; */
+  width: 80%;
+  margin-top: 50px;
+  /* min-width: 583px; */
+}
+
+.flexbox-main-salja-text-heading-container {
+  /* border: 2xp solid blue; */
+  width: 100%;
+  height: 100%;
+  /* min-width: 587px; */
+}
+
+.flexbox-main-salja-text-heading-container h1 {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.flexbox-main-salja-text-heading-paragraph-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+}
+
+.flexbox-main-salja-text-heading-paragraph-container p {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  /* min-width: 723px; */
+}
+
+.flexbox-main-hiw-outer-container {
+
+}
+
+.flexbox-main-salja-form-outer-container {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

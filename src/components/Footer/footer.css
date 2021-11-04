@@ -22,7 +22,9 @@
   display: flex;
   align-items: center;
   /* border: 2px solid red; */
-  height: 100px;
+  /* height: 80px; */
+  min-height: 80px;
+  height: 100%;
   width: 100vw;
   color: black;
   background-color: #F4F4F4;;
@@ -37,17 +39,76 @@
 .flexbox-footer-text-container {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.flexbox-footer-text-container p {
+.flexbox-footer-copyright-computer-container p a {
+  color: white;
+  text-decoration: none;
+}
+
+.flexbox-footer-copyright-computer-container p {
   font-family: "Roboto-Condensed", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 28px;
   font-weight: 400;
+  margin: unset;
 }
 
-.flexbox-footer-text-container p span:hover {
+.flexbox-footer-copyright-computer-container p span:hover {
+  color: #c31531;
+}
+
+.flexbox-footer-copyright-computer-container p a:hover {
+  color: #c31531;
+}
+
+.flexbox-footer-copyright-item-container {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.flexbox-footer-copyright-computer-container {
+
+}
+
+#footer-copyright small {
+
+}
+
+#footer-copyright {
+  margin-top: 8px;
+}
+
+.flexbox-footer-copyright-item {
+  border: 2px solid black;
+}
+
+.flexbox-footer-copyright-item span {
+
+}
+
+.flexbox-footer-copyright-item span:hover {
+  color: #c31531;
+}
+
+.flexbox-footer-copyright-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.flexbox-footer-copyright-item a:hover {
   color: #c31531;
 }

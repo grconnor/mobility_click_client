@@ -31,7 +31,7 @@ const Main = () => {
         <div className="flexbox-main-salja-outer-container">
           <div className="flexbox-main-salja-inner-container">
             <div className="flexbox-main-salja-item-container">
-              <div className="flexbox-main-salja-container">
+              {/* <div className="flexbox-main-salja-container">
                 <div className="flexbox-main-salja-text-container">
                   <div className="flexbox-main-salja-text-inner-container">
                     <div className="flexbox-main-salja-text-heading-container">
@@ -41,26 +41,13 @@ const Main = () => {
                     </div>
                     <div className="flexbox-main-salja-text-heading-paragraph-container">
                       <p id="salja-heading-paragraph">
-                        Vi köper in svensksålda bilar oavsett märke, som gått under 18 000 mil och är 12 år gammal.
+                        Vi köper in svensksålda bilar oavsett märke, som gått
+                        under 18 000 mil och är 12 år gammal.
                       </p>
                     </div>
-                    {/* <div className="flexbox-main-salja-list-container">
-                      <ul>
-                        <li>
-                          Fyll i uppgifterna i formuläret till höger.
-                        </li>
-                        <li>
-                          Få en kostnadsfri värdering inom 24 timmar.
-                        </li>
-                        <li>
-                          När du acceptera vårt bud, ordnar vi transport och betalning, snabbt, tryggt och enkelt.
-                        </li>
-                      </ul>
-                    </div> */}
-                    {/* <div className="flexbox-main-salja-line" /> */}
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="flexbox-main-form-container">
                 <Form />
               </div>

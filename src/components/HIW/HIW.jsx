@@ -5,8 +5,10 @@ import React from "react";
 // Component Imports:
 
 // Image Imports:
-import Phone from "../../images/phone.png";
-import Computer from "../../images/computer.png";
+// import Phone from "../../images/phone.png";
+import Erbjudande from "../../images/erbjudande.jpeg";
+import Registrera from "../../images/registrera.jpeg";
+// import Computer from "../../images/computer.png";
 import Customers from "../../images/customers.png";
 
 const HIW = () => {
@@ -21,7 +23,7 @@ const HIW = () => {
           </div>
           <div className="flexbox-hiw-item-container">
             <div className="flexbox-hiw-item flexbox-hiw-item-1">
-              <img src={Phone} alt="hiw1" />
+              <img src={Registrera} alt="hiw1" />
               <div className="flexbox-hiw-item-text-container">
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">
@@ -34,7 +36,7 @@ const HIW = () => {
               </div>
             </div>
             <div className="flexbox-hiw-item flexbox-hiw-item-2">
-              <img src={Computer} alt="hiw2" />
+              <img src={Erbjudande} alt="hiw2" />
               <div className="flexbox-hiw-item-text-container">
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">
@@ -56,7 +58,7 @@ const HIW = () => {
                 </div>
                 {/* <div className="flexbox-hiw-item-line" /> */}
                 <p id="hiw-item-paragraph">
-                  Vi testar och hämtar bilen när det passar dig. En av våra fordonstestare kontrollerar bilens skick.Efter det görs en banköverföring till ditt konto.(Vid lån på bilen betalar vi direkt till din långivare).
+                  Vi testar och hämtar bilen när det passar dig. En av våra fordonstestare kontrollerar bilens skick.Efter det görs en banköverföring till ditt konto.
                 </p>
               </div>
             </div>

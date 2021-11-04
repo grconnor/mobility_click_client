@@ -7,7 +7,6 @@ import PersonalInformation from "./PersonalInformation/PersonalInformation";
 
 // Image Imports:
 
-
 export default class Form extends Component {
   // constructor(){
   //   super();
@@ -29,7 +28,8 @@ export default class Form extends Component {
     registration: "",
     mileage: "",
     tel: "",
-    email: "",
+    loading: false,
+    // email: "",
     // vinterdack: "-",
     // sommardack: "-",
     // aretruntdack: "-",
@@ -57,11 +57,11 @@ export default class Form extends Component {
     // djurpals: "-",
     // kbrister: "",
     // hitta: "-",
-    narsomhelst: "-",
-    onetwoweeks: "-",
-    threefourweeks: "-",
+    // narsomhelst: "-",
+    // onetwoweeks: "-",
+    // threefourweeks: "-",
+    // price: "",
     status: "Submit",
-    price: ""
   };
 
   // Proceed to next step
@@ -84,35 +84,79 @@ export default class Form extends Component {
 
   // Handle field changes
   handleChange = (input) => (e) => {
-    const name = e.target.name
+    const name = e.target.name;
     this.setState({ [name]: e.target.value });
+  };
+
+  handleButton = (e) => {
+    console.log("Triggered handleButton function");
   };
 
   // Handle button clicks
   onClick = (e) => {
-    console.log("target", e.target)
-    console.log("value", e.target.value)
+    console.log("target", e.target);
+    console.log("value", e.target.value);
     const name = e.target.name;
     if (e.target.value === "-") {
-      this.setState({ [name]: e.target.name})
+      this.setState({ [name]: e.target.name });
       e.target.style.backgroundColor = "green";
       // e.target.style.color = "white";
     } else {
-      this.setState({ [name]: "-"})
-      e.target.style.backgroundColor = "rgb(160, 33, 33)"
+      this.setState({ [name]: "-" });
+      e.target.style.backgroundColor = "rgb(160, 33, 33)";
     }
-  }
+  };
 
   render() {
     const { step } = this.state;
-    const { registration, mileage, tel, email, narsomhelst, onetwoweeks, threefourweeks, price } = this.state;
-    const values = { registration, mileage, tel, email, narsomhelst,onetwoweeks, threefourweeks, price };
-    console.log("values.registration:", values.registration)
+    const { registration, mileage, tel, status } = this.state;
+    const values = { registration, mileage, tel };
+    const { loading } = this.state;
+
+    // console.log("values.registration: ", values.registration);
     // const [status, setStatus] = useState("Submit");
-    
+
+    // const successDiv = document.getElementById(
+    //   "flexbox-success-outer-container"
+    // );
+    // if (successDiv) {
+    //   console.log("Form Submitted, removing top text");
+    //   const topText = document.getElementById(
+    //     "flexbox-main-salja-text-container"
+    //   );
+    //   topText.style.border = "2px solid red";
+    // } else {
+    //   console.log("Form has not been submitted yet.");
+    // }
+
     const handleSubmit = async (e) => {
+      console.log("Triggered form handleSubmit");
       e.preventDefault();
-      this.setState({ status: "Sending"});
+      this.setState({ status: "Sending" });
+      this.setState({ step: 2 });
+      const serviceID = "service_h9n5zib";
+      const templateID = "lead_form";
+      const templateParams = {
+        registration: values.registration,
+        tel: values.tel,
+        mileage: values.mileage,
+      };
+      window.emailjs.send(serviceID, templateID, templateParams).then(
+        function (response) {
+          console.log("SUCCESS!", response, response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+    };
+
+    const xhandleSubmit = async (e) => {
+      console.log("Triggered form handleSubmit");
+      e.preventDefault();
+      this.setState({ status: "Sending" });
+      this.setState({ step: 2 });
+      console.log("values.status: ", values.status);
       // localStorage.setItem("registration", registration);
       // localStorage.setItem("email", email);
       // setStatus("Sending...");
@@ -121,7 +165,7 @@ export default class Form extends Component {
         registration: values.registration,
         mileage: values.mileage,
         tel: values.tel,
-        email: values.email,
+        // email: values.email,
         // vinterdack: values.vinterdack,
         // sommardack: values.sommardack,
         // aretruntdack: values.aretruntdack,
@@ -148,13 +192,13 @@ export default class Form extends Component {
         // tobak: values.tobak,
         // djurpals: values.djurpals,
         // kbrister: values.kbrister,
-        narsomhelst: values.narsomhelst,
-        onetwoweeks: values.onetwoweeks,
-        threefourweeks: values.threefourweeks,
+        // narsomhelst: values.narsomhelst,
+        // onetwoweeks: values.onetwoweeks,
+        // threefourweeks: values.threefourweeks,
         // hitta: values.hitta,
-        price: values.price
+        // price: values.price
       };
-      let response = await fetch("http://localhost:5000/vardera-din-bil", {
+      let response = await fetch("http://vast-mesa-43641.herokuapp:5000/lead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
@@ -162,10 +206,10 @@ export default class Form extends Component {
         body: JSON.stringify(details),
       });
       // setStatus("Submit");
-      this.setState({status: "Submit"});
+      this.setState({ status: "Submit" });
       let result = await response.json();
       alert(result.status);
-      console.log("result.status:", result.status)
+      console.log("result.status:", result.status);
     };
 
     switch (step) {
@@ -176,17 +220,15 @@ export default class Form extends Component {
             values={values}
             handleChange={this.handleChange}
             handleSubmit={handleSubmit}
+            onClick={this.handleButton}
             // onSubmit={handleSubmit}
-            // onClick={this.handleButton}
           />
         );
       case 2:
-        return (
-          <Success />
-        );
+        return <Success />;
       default:
-      // Do nothing
-      console.log("MultiStep form built with React.")
+        // Do nothing
+        console.log("MultiStep form built with React.");
     }
   }
 }

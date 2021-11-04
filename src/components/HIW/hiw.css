@@ -22,19 +22,59 @@
       format("truetype");
 }
 
+@media only screen and (max-width: 420px) {
+  body .flexbox-hiw-item-text-container p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  
+  body .flexbox-hiw-inner-container {
+    /* border: 2px solid yellow !important; */
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 1500px) {
+  
+  body .flexbox-hiw-item-text-heading-container h2 {
+    min-width: unset;
+  }
+
+  
+  body .flexbox-hiw-item-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-width: unset; */
+  }
+
+  body .flexbox-hiw-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .flexbox-hiw-outer-container {
-  margin-top: 3%;
+  /* margin-top: 3%; */
   margin-bottom: 6%;
   height: 100%;
   width: 100vw;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .flexbox-hiw-inner-container {
+  /* border: 2px solid blue; */
   width: 80%;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,27 +83,34 @@
 
 .flexbox-hiw-heading-container {
   /* border: 2px solid blue; */
-  width: 100%;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: ;
+  background-color: white;
+  margin-top: 40px;
 }
 
 .flexbox-hiw-heading-container h1 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: 45px;
-  line-height: 55px;
-  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
   color: black;
   margin-bottom: 3%;
 }
 
 .flexbox-hiw-item-container {
-  /* border: 2px solid green; */
+  /* border: 2px solid red; */
   width: 100%;
+  /* min-width: 595px; */
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 .flexbox-hiw-item {
@@ -81,8 +128,9 @@
 }
 
 .flexbox-hiw-item-text-heading-container h2 {
-  width: 100%;
   /* border: 1px solid red; */
+  width: 100%;
+  min-width: 325px;
   padding-top: 10px;
   margin: unset;
   font-family: "Roboto", sans-serif;
@@ -98,8 +146,9 @@
   /* border: 1px solid red; */
   /* background-color: lightgray; */
   padding: 10px;
-  width: 395px;
+  /* width: 395px; */
   border-radius: 15px;
+  min-width: 300px;
 }
 
 .flexbox-hiw-item-text-container p {
@@ -110,11 +159,15 @@
   font-weight: 400;
   color: black;
   text-align: center;
+  /* word-break: break-all;
+  hyphens: manual; */
 }
 
 .flexbox-hiw-item img {
-  height: 277px;
+  height: auto;
   width: 100%;
+  max-width: 415px;
+  min-width: 300px;
   border-radius: 15px;
 }
 

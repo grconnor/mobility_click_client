@@ -2,9 +2,15 @@
 
 # To-do:
 
-- 
-- 
-- 
+- Change FAQ and Om Oss min button size when in mobile screen range in Success Component.
+- Border radias or decoration to grey text background in Success component.
+- Fix manifest name from Mobility Click to Sälj din bil ---?
+- "Kontakta oss" ---
+- Change images, 3rd is paid ---
+- Check favicon images. ---
+- Fredrik + Antonio phone number correct? 9 digits
+- Solution for React GA towkin.
+
 
 # Fixes:
 

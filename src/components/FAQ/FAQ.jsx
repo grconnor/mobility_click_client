@@ -7,7 +7,7 @@ import React from "react";
 // Image Imports:
 
 function FAQ ({faq, index, toggleFAQ}) {
-  console.log("faq:", faq.question)
+  // console.log("faq:", faq.question)
   return (
     <>
       <div className={"faq " + (faq.open ? "open" : "")} key={index} onClick={() => toggleFAQ(index)}>

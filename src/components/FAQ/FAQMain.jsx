@@ -11,53 +11,53 @@ import FAQ from "./FAQ";
 const FAQMain = () => {
   const [faqs, setFaqs] = useState([
     {
-      question: "Kostar det något?",
-      answer: "Nej Tjänsten är kostnadsfri och du förbinder dig inte till något. Om du inte accepterar vårt erbjudande tackar du nej. Du avgör själv om du vill sälja din bil till oss.",
+      question: "Är tjänsten gratis?",
+      answer: "Det stämmer! Tjänsten är helt kostnadsfri och du som säljare förbinder dig inte till något. Vill du inte acceptera vårt erbjudande kan du, såklart, tacka nej. Med andra ord, du bestämmer själv efter att du mottagit vårt erbjudande om du vill sälja din bil till oss eller inte!",
       open: false
     },
     {
-      question: "Hur kan ni erbjuda så mycket för min bil?",
-      answer: "Med våra erfarna inköpare får en så bra affär som möjligt.   Vi behöver inte räkna av pengar från din bil som annars skulle gått till mellanhänder NEWLINE Normalt kan du räkna med omkring bättre betalt än du får hos din lokala bilhandlare. Kanske inte lika bra som att sälja privat (om du är duktig på det) men du slipper allt krångel! NEWLINE Det blir i slutändan oftast mer pengar till dig och du slipper lägga ner massa tid och riskera pengar till startavgifter, rekondavgifter och liknande.",
+      question: "Hur prissätter ni min bil?",
+      answer: "Våra erfarna inköpare ger dig ett erbjudande samma dag som du skriver in dig. Eftersom du inte behöver räkna av pengar från din bil, som skulle hamna hos olika mellanhänder (bilhandlare, auktionsbolag och liknande) erbjuds du ett högre pris. \n\nDessutom slipper du lägga ner all tid och kostnader relaterat till försäljningen. Vi står för annonskostnader, rekonditioneringskostnader och eventuella reklamationer om det upptäcks fel på bilen efter försäljning. \n\nKort sagt: tjänsten gör din bilförsäljning snabbare, tryggare, och enklare. En affär som i slutändan ger mer pengar till dig.",
       open: false
     },
     {
-      question: "Jag vill bara ha en värdering, kan jag endast få det?",
-      answer: "Om du bara är ute efter en värdering så är det här fel tjänst för dig. Tjänsten är till för den som hoppas sälja sin bil till oss.",
+      question: "Jag vill bara värdera min bil, går det",
+      answer: "Eftersom våra priser utgår ifrån att vi står för annonskostnader, rekonditioneringskostnader och eventuella reklamationer, är detta fel tjänst för dig som bara vill ha en värdering. Tjänsten är till för dig som vill ha hjälp med att sälja din bil snabbt, tryggt och enkelt.",
       open: false
     },
     {
-      question: "Vad tjänar ni på att hjälper mig?",
-      answer: "Vi slipper ha mellan händer exempelvis andra bilhandlare, auktionsbolag och liknande som annars tar ut avgifter och förmedlingskostnader, dom pengarna hamnar i stället direkt hos dig. Eftersom vi även får se bilen själva innan vi köper den behöver vi inte heller ta höjd för oförutsedda kostnader. I slutändan du får mer pengar för din bil och vi har mindre risk.",
+      question: "Jag har lån på min bil, kan jag utnyttja tjänsten ändå?",
+      answer: "Att ha billån eller leasing upplägg är inget ovanligt. Vi löser eventuella skulder hos lån/leasing givare och betalar mellanskillnaden till dig. Detta innebär inga extra kostnader för dig.",
       open: false
     },
     {
-      question: "Jag har lån på bilen, hur fungerar det?",
-      answer: "Det är vanligt att man har billån eller leasing på bilen. Vi löser eventuella skulder hos lån/leasing givare och betalar mellanskillnaden till dig. Det innebär inga extra kostnader för dig.",
+      question: "Vad förväntas av mig - vad behöver jag göra?",
+      answer: "Du skriver snabbt och enkelt in dina uppgifter i formuläret och trycker på skicka. För att kunna ge dig ett så bra bud som möjligt ringer vi ett kortare samtal till dig. Under samtalet går vi igenom bilens skick, historik och alla utrustning/tillbehör och dina förväntningar. \n\nNär vi kommer till försäljningen behöver vi del 2 av registreringsbeviset (den gula delen) och alla tillbehör och nycklar till bilen och viktigast av allt ditt kontonummer. Resten löser vi!",
       open: false
     },
     {
-      question: "Vad förväntas av mig - vad ska jag göra?",
-      answer: "Den första intervjun brukar ta 10-15 minuter. Vi kommer fråga om bilens skick, servicehistorik, utrustning/tillbehör och dina förväntningar. Vid en försäljningen behöver vi del 2 av registreringsbeviset (den gula delen) och alla tillbehör och nycklar till bilen och viktigast av allt ditt kontonummer 😊 Vi värderar och testar din bil i nuvarande skick..",
-      open: false
-    },
-    {
-      question: "Vad tar ni för ansvar?",
-      answer: "När vi köpt din bilen tar vi över ansvaret. Vi köper den i befintligt skick.",
+      question: "När tar ni över ansvaret?",
+      answer: "Vi köper in din bil i befintligt skick. Så fort vi köpt bilen tar vi över ansvaret.",
       open: false
     },
     {
       question: "Hur sker ägarbytet?",
-      answer: "Vi har direktregistrering hos Transportstyrelsen och genomför ägarbytet digitalt i deras system. För att kunna göra det behöver vi det senast utfärdade registreringsbeviset del 2 (den gula delen).",
+      answer: "Vi har direktregistrering hos Transportstyrelsen och genomför snabbt ägarbytet digitalt i deras system. OBS. För att kunna genomföra ägarbytet behöver vi det senast utfärdade registreringsbeviset del 2 (den gula delen).",
       open: false
     },
     {
-      question: "Står ni för ert erbjudande?",
-      answer: "Vi garanterar att budet står så länge bilen är enligt överenskommelse och att budet stämmer överens med marknaden (inte ett uppenbart misstag). Och att bilen är beskrivet i korrekt skick. Vårt erbjudande gäller i 14 dagar",
+      question: "Hur länge gäller ert erbjudande?",
+      answer: "Vårt erbjudande gäller i 14 dagar. Vi lägger stor vikt vid trygghet. Därför står vi för budet så länge bilen är enligt beskrivning och att budet stämmer överens med marknaden och inte ett är ett uppenbart misstag.",
+      open: false
+    },
+    {
+      question: "Vad tjänar ni på att hjälpa mig?",
+      answer: "Vi slipper alla mellan händer exempelvis andra bilhandlare, auktionsbolag och liknande som annars tar ut avgifter och förmedlingskostnader, dom pengarna hamnar i stället direkt hos dig. Eftersom vi även får se och testa bilen själva, innan vi köper den, behöver vi inte heller ta höjd för oförutsedda kostnader. Du får mer pengar för din bil och vi tar mindre risk.",
       open: false
     },
     {
       question: "Vilka är ni?",
-      answer: "Budpådinbil.se är del av Mobility motors.  2005 grundade familjen Roelofsen Mobility Motors AB i Malmö. Med en vision, att erbjuda ett problemfritt bilägande. Idag driver vi xx antal fullllserviceanläggningar och är representanter för xx nybilsbilmärken spridda på xx orter i Sverige. För att möta våra kundersbehov av begagnade bilar lanserade vi 2021 budpådinbil.se.",
+      answer: "Tjänsten Budpådinbil.se ägs av Mobility motors. \n\n2005 grundade familjen Roelofsen Mobility Motors AB i Malmö. De hade en vision att kunna erbjuda sina kunder ett problemfritt bilägande. Idag driver Mobility Motors koncernen tio fullserviceanläggningar och är representanter för lika många nybilsbilmärken spridda på sju orter runtom i Sverige. För att möta våra kunders ökade behov av begagnade bilar lanserade vi 2021 budpådinbil.se.",
       open: false
     }
   ]);
@@ -77,11 +77,18 @@ const FAQMain = () => {
   return (
     <>
       <div className="flexbox-faq-outer-container">
+        <div className="flexbox-faq-image-outer-container">
+          <div className="flexbox-faq-image-heading-container">
+            <h1 id="faq-image-heading">
+              Vanliga frågor
+            </h1>
+          </div>
+        </div>
         <div className="flexbox-faq-inner-container">
           <div className="flexbox-faq-heading-container">
-            <h2 id="faq-heading">
-              Här har vi sammanställt svaren på dom <span>vanligaste frågorna</span>. Om du inte hittar svaret du söker så är du välkommen att kontakta oss på xxxx@mmgroup.se
-            </h2>
+            <p id="faq-heading-paragraph">
+              Här har vi sammanställt svaren på dom <span>vanligaste frågorna</span>. Om du inte hittar svaret du söker så är du välkommen att kontakta oss på bud@mmgroup.se
+            </p>
           </div>
           <div className="faqs">
             {faqs.map((faq, i) => (

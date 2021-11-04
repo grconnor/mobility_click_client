@@ -1,0 +1,20 @@
+.hamburger {
+  /* border: 2px solid red; */
+  width: 4rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  z-index: 10;
+  /* margin-top: 8px; */
+}
+
+.burger {
+  width: 2.25rem;
+  height: 0.3rem;
+  border-radius: 10px;
+  background-color: white;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}

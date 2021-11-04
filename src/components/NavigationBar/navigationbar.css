@@ -29,7 +29,22 @@
   align-items: center;
   width: 100vw;
   height: 80px;
-  z-index: -1;
+  z-index: 100;
+}
+
+.flexbox-navigationbar-mobile-outer-wrapper {
+  /* border: 2px solid blue; */
+  /* background-color: #001F2B; */
+  /* background-color: #214D87; this is the one */
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  z-index: 100;
+  margin-top: 500px;
 }
 
 .flexbox-navigationbar-menu-container {
@@ -38,7 +53,7 @@
   flex-direction: row;
   height: 100%;
   align-items: center;
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .flexbox-navigationbar-menu-container #navigationbar-menu-button-empty {
@@ -93,14 +108,14 @@
 .flexbox-navigationbar-logo-container {
   /* border: 2px solid red; */
   height: 80px;
-  width: 500px;
+  width: 200px;
 }
 
 .flexbox-navigationbar-logo {
   /* border: 2px solid yellowgreen; */
   /* background-color: white; */
   height: 100%;
-  width: 275px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,11 +124,81 @@
 .flexbox-navigationbar-logo img {
   /* border: 2px solid blue; */
   height: 50px;
-  width: 150px;
+  width: 85px;
   /* object-fit: cover; */
 }
 
 .flexbox-navigationbar-logo:hover {
   cursor: pointer;
   background-color: darkgray;
+}
+
+.flexbox-navigationbar-mobile-outer-container {
+  /* border: 2px solid red; */
+  height: 80px;
+  width: 75px;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.flexbox-navigationbar-mobile {
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 100%;
+  /* padding-top: 25px; */
+}
+
+.flexbox-navigationbar-mobile ul {
+  /* border: 2px solid blue; */
+  display: none;
+  background-color: black;
+  /* border: 1px solid white; */
+  height: 100px;
+  width: 60vw;
+  min-height: 220px;
+  max-width: 250px;
+  position: absolute;
+  top: 0;
+  padding-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: unset;
+}
+
+.flexbox-navigationbar-mobile ul li {
+  /* border: 2px solid red; */
+  list-style-type: none;
+  width: 100%;
+  height: 35px;
+  /* margin-right: 10px; */
+  /* CHECK HEIGHT */
+}
+
+.flexbox-navigationbar-mobile ul li a {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 400;
+  color: white;
+  display: block;
+  width: 105%;
+  height: 35px;
+  text-decoration: none;
+}
+
+.flexbox-navigationbar-mobile ul li:hover a {
+  /* color: #c31531; */
+}
+
+.flexbox-navigationbar-mobile-hamburger-container {
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

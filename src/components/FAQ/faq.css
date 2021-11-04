@@ -18,15 +18,93 @@
   src: local("Flamante-Round"), url(../../fonts/Flamante\ Round\ -Demo\ FFP-/Flamante-Round-Book-FFP.ttf) format('truetype');
 }
 
+@media only screen and (max-width: 360px) {
+  body .flexbox-faq-heading-container {
+    /* border: 2px solid red; */
+    width: 95vw !important;
+    min-width: unset;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  
+  body .flexbox-faq-heading-container p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  
+  body .faqs {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  
+  body .faqs {
+    width: 100vw;
+    min-width: unset;
+  }
+  
+  body .flexbox-faq-inner-container {
+    width: 94vw !important;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  
+  body .flexbox-faq-inner-container {
+    width: 80%;
+  }
+}
+
 .flexbox-faq-outer-container {
-  display: flex;
-  z-index: 2;
   /* border: 2px solid red; */
   height: 100%;
   width: 100vw;
+  z-index: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+}
+
+.flexbox-faq-image-outer-container {
+  /* border: 2px solid blue; */
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("../../images/Robert-Alina.jpeg"); */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.5)
+  ), url("../../images/Robert-Alina.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flexbox-faq-image-heading-container {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 100px;
+}
+
+.flexbox-faq-image-heading-container h1 {
+  /* border: 2px solid blue; */
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto-Condensed", sans-serif;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 550;
+  color: white;
 }
 
 .flexbox-faq-inner-container {
@@ -43,13 +121,15 @@
 .flexbox-faq-heading-container {
   /* border: 2px solid blue; */
   width: 80%;
+  max-width: 1108px;
   height: 100%;
-  min-width: 650px;
+  min-width: 340px;
+  /* min-width: 650px; */
 }
 
-.flexbox-faq-heading-container h2 {
-  padding: 10px;
+.flexbox-faq-heading-container p {
   /* border: 2px solid red; */
+  padding: 10px;
   padding-left: 15px;
   text-align: center;
   font-family: "Roboto-Condensed", sans-serif;
@@ -58,26 +138,17 @@
   line-height: 40px;
   font-weight: 600;
   color: black;
+  margin-top: 50px;
   /* background-color: rgb(105, 120, 125); */
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) */
 }
 
-.flexbox-faq-heading-container h2 span {
-  /* color: #718091; */
-  /* color: rgb(146, 155, 159); */
-  /* color: rgb(179, 24, 46); */
-  color: rgb(0, 0, 0, 0.6);
-  /* color: black; */
-  /* font-size: 35px; */
-  text-transform: uppercase;
-}
-
 .faqs {
   /* border: 2px solid red; */
-  width: 100%;
-  min-width: 600px;
+  /* width: 100%; */
+  /* min-width: 710px; */
   max-width: 768px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 15px;
   margin-bottom: 30px;
 }
@@ -93,6 +164,10 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
+.faqs .faq:hover {
+  cursor: pointer;
+}
+
 .faqs .faq .faq-question {
   /* border: 2px solid red; */
   /* background-color: rgb(105, 120, 125); */
@@ -101,8 +176,8 @@
   background-color: rgb(105, 120, 125);
   padding: 3px;
   position: relative;
-  padding-right: 80px;
-  transition: all 0.6s ease;
+  padding-right: 35px;
+  transition: all 0.3s ease-out;
   /* height: 40px; */
   min-height: 100%;
   opacity: 0.6;
@@ -112,10 +187,6 @@
   line-height: 30px;
   font-weight: 400;
   color: white;
-}
-
-.faqs .faq .faq-question:hover {
-  cursor: pointer;
 }
 
 .faqs .faq .faq-question::after {
@@ -142,7 +213,7 @@
   min-height: 0;
   max-height: 0px;
   overflow-y: hidden;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .faqs .faq.open .faq-question {
@@ -190,4 +261,8 @@
   cursor: pointer;
   /* color: #c31531; */
   color: black;
+}
+
+.faq-answer {
+  white-space: pre-wrap;
 }
