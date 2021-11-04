@@ -11,7 +11,6 @@
 - Fredrik + Antonio phone number correct? 9 digits
 - Solution for React GA towkin.
 
-
 # Fixes:
 
 - 
