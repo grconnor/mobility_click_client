@@ -13,6 +13,15 @@
 
 # Fixes:
 
+
+remote: Resolving deltas: 100% (51/51), completed with 21 local objects.
+remote: warning: File src/images/logos/BudPaDinBil/Hacking_eBooks_50-90+BTC_eBooks/Hacker Handbook 1.0 - made by f - Neznamy.chm is 76.21 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: warning: File src/images/logos/BudPaDinBil/MyMonero-1.1.24.dmg is 88.18 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: error: Trace: e8861dc91e1f8bd037eb1d7a81210872a585e6b2d38907335b9b0af96ecfa839
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File src/images/logos/BudPaDinBil/MGP4.rar is 205.21 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: File src/images/logos/BudPaDinBil/MGP3.rar is 724.95 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
 - 
 - 
 - 
