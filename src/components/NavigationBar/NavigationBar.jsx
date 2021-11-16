@@ -6,10 +6,10 @@ import { useMediaQuery } from "react-responsive";
 
 // Component Imports:
 import Hamburger from "../../components/Hamburger/Hamburger";
-import { HoverableDiv } from "../../components/HoverableDiv/HoverableDiv";
+// import { HoverableDiv } from "../../components/HoverableDiv/HoverableDiv";
 
 // Image Imports:
-import BPDBFinal from "../../images/logos/BudPaDinBil/mmbpdbresize.png";
+import BPDBFinal from "../../images/logos/mmbudpadinbil.png";
 // import BPDBCropped from "../../images/logos/BudPaDinBil/mmbudpådinbilcroppedwhite.png";
 
 const HoverText = () => {

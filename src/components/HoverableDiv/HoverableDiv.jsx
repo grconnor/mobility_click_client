@@ -5,13 +5,13 @@ import { render } from "react-dom";
 // Component Imports:
 
 // Image Imports:
-import BPDBCropped from "../../images/logos/BudPaDinBil/mmbudpådinbilcroppedwhite.png";
+// import BPDBCropped from "../../images/logos/BudPaDinBil/mmbudpådinbilcroppedwhite.png";
 
 
 const HoverableDiv = ({ handleMouseEnter, handleMouseLeave }) => {
   return (
     <div className="flexbox-hoverablediv-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <img src={BPDBCropped} alt="logo" id="navigationbar-image" onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+      {/* <img src={BPDBCropped} alt="logo" id="navigationbar-image" onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave}/> */}
     </div>
   );
 };

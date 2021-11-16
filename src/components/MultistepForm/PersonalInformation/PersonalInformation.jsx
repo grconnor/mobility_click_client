@@ -65,18 +65,17 @@ export class PersonalInformation extends Component {
             </div>
             <div className="flexbox-main-salja-text-heading-paragraph-container">
               <p id="salja-heading-paragraph">
-                Vi köper in svensksålda bilar oavsett märke, som gått under 18
-                000 mil och är max 12 år gammal.
+                Vi köper in alla svensk-sålda bilar, som gått under 18 000 mil och är max 12 år, oavsett märke.
               </p>
             </div>
           </div>
           <div className="flexbox-personalinformation-form-container">
             <div className="flexbox-personalinformation-form-heading-container">
               <h2 id="personalinformation-heading">
-                Fyll i uppgifterna för bästa bud
+                Fyll i dina uppgifter för bästa bud
               </h2>
               <p id="personalinformation-paragraph">
-                Helt kostnadsfritt och ej bindande!
+                Tjänsten är <strong>kostnadsfri</strong> och du binder dig inte till någon affär.
               </p>
             </div>
             <form
@@ -156,8 +155,7 @@ export class PersonalInformation extends Component {
                 </button>
                 <div className="flexbox-personalinformation-bottom-paragraph-container">
                   <p id="contact-us-paragraph">
-                    Om du har några frågor är du alltid välkommen att kontakta
-                    oss på <a href="tel:+46101646595">Tel: 010 -164 65 95</a>
+                    Frågor? Välkommen att kontakta oss på <a href="tel:+46101646595">010 -164 65 95</a>!
                   </p>
                 </div>
               </div>

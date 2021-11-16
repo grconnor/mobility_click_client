@@ -63,13 +63,14 @@
 
 .flexbox-hiw-outer-container {
   /* margin-top: 3%; */
-  margin-bottom: 6%;
+  /* margin-bottom: 6%; */
   height: 100%;
   width: 100vw;
   max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 75px 0;
 }
 
 .flexbox-hiw-inner-container {
@@ -90,7 +91,6 @@
   align-items: center;
   text-align: center;
   background-color: white;
-  margin-top: 40px;
 }
 
 .flexbox-hiw-heading-container h1 {
@@ -100,7 +100,7 @@
   line-height: 70px;
   font-weight: 600;
   color: black;
-  margin-bottom: 3%;
+  margin-top: unset;
 }
 
 .flexbox-hiw-item-container {
@@ -158,7 +158,7 @@
   line-height: 25px;
   font-weight: 400;
   color: black;
-  text-align: center;
+  text-align: left;
   /* word-break: break-all;
   hyphens: manual; */
 }

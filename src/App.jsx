@@ -10,7 +10,7 @@ import FAQ from "./components/FAQ/FAQMain";
 import OmOss from "./components/OmOss/OmOss";
 import Footer from "./components/Footer/Footer";
 import MultiStepForm from "./components/MultistepForm/Form";
-import HoverableDiv from "./components/HoverableDiv/HoverableDiv";
+// import HoverableDiv from "./components/HoverableDiv/HoverableDiv";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 
 // Image Imports:

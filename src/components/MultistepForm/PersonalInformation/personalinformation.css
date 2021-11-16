@@ -220,11 +220,13 @@
 
 .flexbox-personalinformation-bottom-paragraph-container p a {
   color: white;
-  text-decoration-line: underline;
+  text-decoration-line: none;
+  border-bottom: 1px solid;
 }
 
 .flexbox-personalinformation-bottom-paragraph-container p a:hover {
-  color: #c31531;
+  /* color: #c31531; */
+  color: black;
 }
 
 .flexbox-personalinformation-bottom-container button {
