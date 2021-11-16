@@ -26,7 +26,7 @@ const HIW = () => {
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">1. Fyll i dina uppgifter</h2>
                 </div>
-                <p id="hiw-item-paragraph">
+                <p id="hiw-item-paragraph-1">
                   För att vi ska kunna ge dig ett så bra bud som möjligt behöver
                   vi korrekta uppgifter om din bil. Börja därför med att fylla i
                   formuläret ovan. <br />
@@ -44,7 +44,7 @@ const HIW = () => {
                 <div className="flexbox-hiw-item-text-heading-container">
                   <h2 id="hiw-item-heading">2. Samtal och bud</h2>
                 </div>
-                <p id="hiw-item-paragraph">
+                <p id="hiw-item-paragraph-2">
                   Eftersom varje begagnad-bil är unik, kontaktar vi dig för en
                   kortare intervju. Detta sker senast 24 h efter du fyllt i
                   formuläret! Efter samtalet gör vi en analys av marknaden och
@@ -64,7 +64,7 @@ const HIW = () => {
                   </h2>
                 </div>
                 {/* <div className="flexbox-hiw-item-line" /> */}
-                <p id="hiw-item-paragraph">
+                <p id="hiw-item-paragraph-3">
                   Enligt överenskommelsen kommer en av våra fordonstestare hem
                   till dig och kontrollerar bilens skick. Så länge alla
                   uppgifter stämmer överens med det som uppgetts under
