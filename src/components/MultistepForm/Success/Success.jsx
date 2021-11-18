@@ -8,9 +8,9 @@ import React, { Component } from "react";
 
 
 class Success extends Component {
-  componentDidMount() {
-    console.log("success component loaded now")
-  }
+  // componentDidMount() {
+  //   console.log("success component loaded now")
+  // }
   render() {
     return (
       <>
