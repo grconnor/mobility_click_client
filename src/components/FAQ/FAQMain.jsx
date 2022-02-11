@@ -1,14 +1,19 @@
 // Library Imports:
 import "./faq.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 // Component Imports:
 import FAQ from "./FAQ";
+import { GaPageView } from "../..";
+import CommonPageHeadContent from "../CommonPageHeadContent/CommonPageHeadContent";
 
 // Image Imports:
 
 
 const FAQMain = () => {
+
+  useEffect(() => { GaPageView("Vänliga Frågor"); }, []);
+
   const [faqs, setFaqs] = useState([
     {
       question: "Är tjänsten gratis?",
@@ -76,27 +81,30 @@ const FAQMain = () => {
 
   return (
     <>
-      <div className="flexbox-faq-outer-container">
-        <div className="flexbox-faq-image-outer-container">
-          <div className="flexbox-faq-image-heading-container">
-            <h1 id="faq-image-heading">
-              Vanliga frågor
-            </h1>
+      <CommonPageHeadContent title="Vänliga frågor" description="FAQ" />
+      <section>
+        <div className="flexbox-faq-outer-container">
+          <div className="flexbox-faq-image-outer-container">
+            <div className="flexbox-faq-image-heading-container">
+              <h1 id="faq-image-heading">
+                Vanliga frågor
+              </h1>
+            </div>
+          </div>
+          <div className="flexbox-faq-inner-container">
+            <div className="flexbox-faq-heading-container">
+              <p id="faq-heading-paragraph">
+                Här har vi sammanställt svaren på dom <span>vanligaste frågorna</span>. Om du inte hittar svaret du söker så är du välkommen att kontakta oss på bud@mmgroup.se
+              </p>
+            </div>
+            <div className="faqs">
+              {faqs.map((faq, i) => (
+                <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flexbox-faq-inner-container">
-          <div className="flexbox-faq-heading-container">
-            <p id="faq-heading-paragraph">
-              Här har vi sammanställt svaren på dom <span>vanligaste frågorna</span>. Om du inte hittar svaret du söker så är du välkommen att kontakta oss på bud@mmgroup.se
-            </p>
-          </div>
-          <div className="faqs">
-            {faqs.map((faq, i) => (
-              <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
-            ))}
-          </div>
-        </div>
-      </div>
+      </section>
     </>
   )
 }
